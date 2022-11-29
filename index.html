@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sign-up & Log-in Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signup-login">
+          <form action="results.html" class="sign-up-form" method="GET">
+            <h2 class="title">Sign-up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                id="name"
+                placeholder="First Name"
+                name="First Name"
+                required
+              />
+            </div>
+
+            <div class="input-field">
+              <i class="fas fa-regular fa-user"></i>
+              <input placeholder="Last Name" name="Last Name" required />
+            </div>
+
+            <div class="input-field">
+              <i class="fas fa-user-plus"></i>
+              <input
+                type="username"
+                placeholder="Username"
+                name="Username"
+                required
+              />
+            </div>
+
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="E-mail" name="E-mail" required />
+            </div>
+
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input
+                placeholder="Must be between 8-20 characters"
+                type="password"
+                name="Password"
+                maxlength="20"
+                minlength="8"
+                required
+              />
+            </div>
+
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input
+                placeholder="Confirm Password"
+                type="password"
+                name="Confirm Password"
+                maxlength="20"
+                minlength="8"
+                required
+              />
+            </div>
+            <button class="btn" type="submit">Create Account</button>
+            <p class="social-text">Or sign-up with social platforms</p>
+            <div class="social-media">
+              <a href="" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+
+          <form action="results.html" class="log-in-form" method="GET">
+            <h2 class="title">Log-in</h2>
+
+            <div class="input-field">
+              <i class="fas fa-user-plus"></i>
+              <input
+                type="username"
+                placeholder="Username"
+                name="Username"
+                required
+              />
+            </div>
+
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input
+                placeholder="Password"
+                type="password"
+                name="Password"
+                maxlength="20"
+                minlength="8"
+                required
+              />
+            </div>
+
+            <button class="btn" type="submit">Log in</button>
+            <p class="social-text">Or sign-in with social platforms</p>
+            <div class="social-media">
+              <a href="" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here?</h3>
+            <p>
+              This is a demo registration page! You know you need something like
+              this in your life to help you realize your deepest dreams. Sign-up
+              now to get started.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">Sign-up</button>
+            <img src="pics/lost-online.svg" class="image" alt="" />
+          </div>
+        </div>
+
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us?</h3>
+            <p>
+              This is a demo registration page! You know you need something like
+              this in your life to help you realize your deepest dreams. Log-in
+              now to get started.
+            </p>
+            <button class="btn transparent" id="log-in-btn">Log-in</button>
+            <img src="pics/designer.svg" class="image" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
